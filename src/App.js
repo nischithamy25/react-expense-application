@@ -1,4 +1,5 @@
 import React from 'react';
+import NewExpense from './components/NewExpenses/NewExpense';
 import Expenses from './components/Expenses/Expenses';
 
 
@@ -30,7 +31,7 @@ function App() {
   return React.createElement(
     'div',
     {},
-    React.createElement("p",{}, "welcome to react!!"),
+    React.createElement(NewExpense),
     React.createElement(Expenses, { items: expenses })
   );
 }
